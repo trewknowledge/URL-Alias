@@ -1,0 +1,21 @@
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Ignore system created fils
+.idea
+.DS_Store
+
+# Ignore build directories and tmp folders
+/build
+/misc/tmp
+/node_modules
+/coverage
+phpcs-report.txt
+tk-url-alias.zip
