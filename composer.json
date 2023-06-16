@@ -1,33 +1,33 @@
 {
-  "name": "tk/url-alias",
-  "description": "Specify an alternative path by which this data can be accessed.",
-  "type": "plugin",
-  "license": "GPL v2 or later",
-  "minimum-stability": "stable",
-  "scripts": {
-    "phpcs": [
-      "vendor/bin/phpcs -p -s"
-    ]
-  },
-  "require": {
-    "php": ">=7.4"
-  },
-  "require-dev": {
-    "wp-coding-standards/wpcs": "dev-develop",
-    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
-    "phpcompatibility/phpcompatibility-wp": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "TK\\UrlAlias\\": "includes/"
-    }
-  },
-  "config": {
-    "platform": {
-      "php": "7.4"
-    },
-    "allow-plugins": {
-      "dealerdirect/phpcodesniffer-composer-installer": true
-    }
-  }
+	"name": "tk/url-alias",
+	"description": "Specify an alternative URL for your posts and pages.",
+	"type": "plugin",
+	"license": "GPL v2 or later",
+	"minimum-stability": "stable",
+	"scripts": {
+		"phpcs": [
+			"vendor/bin/phpcs -p -s"
+		]
+	},
+	"require": {
+		"php": ">=7.4"
+	},
+	"require-dev": {
+		"wp-coding-standards/wpcs": "dev-develop",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+		"phpcompatibility/phpcompatibility-wp": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"TK\\UrlAlias\\": "includes/"
+		}
+	},
+	"config": {
+		"platform": {
+			"php": "7.4"
+		},
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
 }
