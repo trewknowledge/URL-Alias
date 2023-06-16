@@ -1,5 +1,5 @@
 {
-	"name": "tk-url-alias",
+	"name": "url-alias",
 	"version": "1.0.0",
 	"description": "Specify an alternative URL for your posts and pages.",
 	"scripts": {
@@ -10,15 +10,14 @@
 		"dev": "wp-scripts start",
 		"build": "wp-scripts build",
 		"phpcs": "composer run phpcs",
-		"zip": "composer install --no-dev && npm run build && wp-scripts plugin-zip",
-		"prepare": "husky install"
+		"zip": "composer install --no-dev && npm run build && wp-scripts plugin-zip"
 	},
 	"keywords": [
 		"tk-url-alias",
 		"url-alias-plugin"
 	],
 	"files": [
-		"tk-url-alias.php",
+		"url-alias.php",
 		"includes",
 		"languages",
 		"vendor",
