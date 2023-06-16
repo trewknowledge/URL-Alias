@@ -72,7 +72,7 @@ class Helper {
             ],
         );
 
-        $post_types = array_merge( [ 'post', 'page' ], $custom_post_types );
+        $post_types = array_merge( [ 'post', 'page' ], array_keys( $custom_post_types ) );
 
         return apply_filters( 'tk_url_alias_post_types', $post_types );
     }

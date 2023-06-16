@@ -27,7 +27,6 @@
   "author": "Trew Knowledge Inc.",
   "license": "GPL v2 or later",
   "devDependencies": {
-    "@wordpress/scripts": "^25.1.0",
-    "husky": "^8.0.3"
+    "@wordpress/scripts": "^25.1.0"
   }
 }
