@@ -14,9 +14,6 @@ defined( 'ABSPATH' ) || exit;
  * URL Alias Form.
  */
 class Form {
-    private const ASSET_HANDLE     = 'tk-url-alias';
-    private const LOCALIZED_OBJECT = 'tkUrlAlias';
-
     /**
      * Form constructor.
      */
@@ -25,28 +22,6 @@ class Form {
         add_filter( 'is_protected_meta', [ $this, 'protect_meta' ], 10, 2 );
 		add_action( 'delete_post', [ $this, 'delete_permalink' ] );
         add_action( 'save_post', [ $this, 'delete_cache' ] );
-        add_action( 'enqueue_block_editor_assets', [ $this, 'enqueue_block_editor_assets' ], 1 );
-	}
-
-	/**
-	 * Enqueue block editor assets.
-	 *
-	 * @return void
-	 */
-	public function enqueue_block_editor_assets(): void {
-        $script     = require TK_URL_ALIAS_ASSETS_DIR . 'index.asset.php'; // phpcs:ignore WordPressVIPMinimum.Files.IncludingFile.UsingVariable
-        $dependency = $script['dependencies'] ?? [];
-        $version    = $script['version'] ?? filemtime( $script );
-
-		wp_register_script( self::ASSET_HANDLE, TK_URL_ALIAS_ASSETS_URI . 'index.js', $dependency, $version, true );
-		wp_enqueue_script( self::ASSET_HANDLE );
-        wp_localize_script(
-            self::ASSET_HANDLE,
-            self::LOCALIZED_OBJECT,
-            [
-                'postTypes' => Helper::get_post_types(),
-            ]
-        );
 	}
 
 	/**

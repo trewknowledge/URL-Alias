@@ -3,7 +3,7 @@
         'name' => 'tk/url-alias',
         'pretty_version' => 'dev-develop',
         'version' => 'dev-develop',
-        'reference' => 'e09bc6b73356e47853adcf41edca8146dd7ca782',
+        'reference' => '4765522fc8e4c0a0ac6edccdec2c6868b1b7892f',
         'type' => 'plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'tk/url-alias' => array(
             'pretty_version' => 'dev-develop',
             'version' => 'dev-develop',
-            'reference' => 'e09bc6b73356e47853adcf41edca8146dd7ca782',
+            'reference' => '4765522fc8e4c0a0ac6edccdec2c6868b1b7892f',
             'type' => 'plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
