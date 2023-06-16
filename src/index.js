@@ -1,4 +1,4 @@
-const {registerPlugin} = wp.plugins;
-import UrlAlias from './url-alias'
+const { registerPlugin } = wp.plugins;
+import UrlAlias from './url-alias';
 
-registerPlugin('tk-url-alias', {render: UrlAlias});
+registerPlugin( 'tk-url-alias', { render: UrlAlias } );

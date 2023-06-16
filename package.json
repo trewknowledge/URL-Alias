@@ -1,33 +1,32 @@
 {
-  "name": "tk-url-alias",
-  "version": "1.0.0",
-  "description": "Specify an alternative path by which this data can be accessed.",
-  "scripts": {
-    "format": "wp-scripts format",
-    "lint:css": "wp-scripts lint-style",
-    "lint:js": "wp-scripts lint-js",
-    "packages-update": "wp-scripts packages-update",
-    "dev": "wp-scripts start",
-    "build": "wp-scripts build",
-    "phpcs": "composer run phpcs",
-    "zip": "composer install --no-dev && npm run build && wp-scripts plugin-zip",
-    "prepare": "husky install"
-  },
-  "keywords": [
-    "tk-url-alias",
-    "url-alias-plugin"
-  ],
-  "files": [
-    "tk-url-alias.php",
-    "includes",
-    "languages",
-    "vendor",
-    "build"
-  ],
-  "author": "Trew Knowledge Inc.",
-  "license": "GPL v2 or later",
-  "devDependencies": {
-    "@wordpress/scripts": "^25.1.0",
-    "husky": "^8.0.3"
-  }
+	"name": "tk-url-alias",
+	"version": "1.0.0",
+	"description": "Specify an alternative URL for your posts and pages.",
+	"scripts": {
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"dev": "wp-scripts start",
+		"build": "wp-scripts build",
+		"phpcs": "composer run phpcs",
+		"zip": "composer install --no-dev && npm run build && wp-scripts plugin-zip",
+		"prepare": "husky install"
+	},
+	"keywords": [
+		"tk-url-alias",
+		"url-alias-plugin"
+	],
+	"files": [
+		"tk-url-alias.php",
+		"includes",
+		"languages",
+		"vendor",
+		"build"
+	],
+	"author": "Trew Knowledge Inc.",
+	"license": "GPL v2 or later",
+	"devDependencies": {
+		"@wordpress/scripts": "^25.1.0"
+	}
 }

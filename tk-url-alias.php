@@ -1,13 +1,13 @@
 <?php
 /**
- * TK URL Alias
+ * URL Alias
  *
  * @package   TK\UrlAlias
  * @author    Trew Knowledge Inc.
  * @license   GPL v2 or later <http://www.gnu.org/licenses/gpl-2.0.txt>
  *
  * @wordpress-plugin
- * Plugin Name:       TK URL Alias
+ * Plugin Name:       URL Alias
  * Plugin URI:        https://trewknowledge.com/
  * Description:       Specify an alternative URL for your posts and pages.
  * Version:           1.0.0
