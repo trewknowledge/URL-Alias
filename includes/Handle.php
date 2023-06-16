@@ -44,10 +44,7 @@ class Handle {
 			return $filter_request;
 		}
 
-		$requested_post_uri = explode( get_home_url(), get_self_link() )[1] ?? '';
-		$requested_post_uri = ltrim( untrailingslashit( $requested_post_uri ), '/\\' );
-
-        $post_id = Helper::query_post( $requested_post_uri );
+        $post_id = Helper::query_post( $this->get_formatted_uri() );
 
 		if ( $post_id ) {
 			$this->register_rules_for_post( $post_id );
@@ -55,6 +52,19 @@ class Handle {
 
 		return $filter_request;
 	}
+
+    /**
+     * Get the formatted the request URI.
+     *
+     * @return string
+     */
+    private function get_formatted_uri(): string {
+        $requested_post_uri = explode( get_home_url(), get_self_link() )[1] ?? '';
+        $requested_post_uri = wp_parse_url( $requested_post_uri, PHP_URL_PATH );
+        $requested_post_uri = ltrim( untrailingslashit( $requested_post_uri ), '/\\' );
+
+        return apply_filters( 'tk_url_alias_requested_post_uri', $requested_post_uri );
+    }
 
 	/**
 	 * Register rewrite rules for post.
