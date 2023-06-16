@@ -27,6 +27,7 @@ class UrlAlias {
      * @return void
      */
 	public function includes(): void {
+        new Assets();
 		new Form();
 		new Handle();
 	}
