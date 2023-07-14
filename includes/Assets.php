@@ -40,6 +40,7 @@ class Assets {
             self::ASSET_HANDLE,
             self::LOCALIZED_OBJECT,
             [
+                'metaKey'   => Helper::URL_ALIAS,
                 'postTypes' => Helper::get_post_types(),
             ]
         );

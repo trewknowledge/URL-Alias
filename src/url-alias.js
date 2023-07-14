@@ -9,6 +9,8 @@ const UrlAlias = ( { postType, postMeta, setPostMeta } ) => {
 		return;
 	}
 
+    const metaKey = window?.tkUrlAlias?.metaKey;
+
 	return (
 		<PluginDocumentSettingPanel
 			name="tk-url-alias"
@@ -17,9 +19,9 @@ const UrlAlias = ( { postType, postMeta, setPostMeta } ) => {
 		>
 			<PanelRow>
 				<TextControl
-					value={ postMeta?.tk_url_alias }
+					value={ postMeta?.[metaKey] }
 					onChange={ ( value ) => {
-						setPostMeta( { tk_url_alias: value } );
+						setPostMeta( { [metaKey]: value } );
 					} }
 					help={ __(
 						'Specify an alternative path for your posts and pages',
